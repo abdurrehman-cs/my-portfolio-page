@@ -1,0 +1,262 @@
+/* Reset & Basic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+
+/* Navbar */
+header {
+  background: #222;
+  color: white;
+  padding: 15px 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Home Section */
+.home {
+  background-color: rosybrown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 50px;
+  flex-wrap: wrap; 
+}
+
+/* allows wrapping on small screens */
+
+.home-img img {
+  width: 250px;
+  height: 80%;
+  border-radius: 10%;
+}
+
+.home-text {
+  max-width: 600px;
+}
+
+.home span {
+  color: #0077ff;
+}
+
+button {
+  padding: 10px 20px;
+  background: #0077ff;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;  
+}
+
+/* About */
+.about {
+  background-color: #FFFFFF;
+  color: #16213E;
+}
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+/* Education */
+#education {
+  background-color: #F7F9FC;
+  color: #16213E;
+}
+.edu-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Common Card Style */
+.card {
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  margin: 40px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Different colors for each */
+.matric {
+  background: #e3f2fd;   /* blue */
+  border-left: 5px solid #2196f3;
+}
+
+.inter {
+  background: #fff8e1;   /* yellow */
+  border-left: 5px solid #ffc107;
+}
+
+.bscs {
+  background: #e8f5e9;   /* green */
+  border-left: 5px solid #4caf50;
+}
+
+/* Skills */
+#skills {
+  background-color: lightcyan;
+  color: black;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.skill {
+  background: #0077ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 40px;
+}
+
+/* Projects */
+#projects {
+  background-color: #FFFFFF;
+  color: #16213E;
+}
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 250px;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 50px ;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  padding: 40px;
+  background-color: #0F3460;
+  color: #FFFFFF;
+}
+
+.contact-container {
+  background: hwb(196 31% 57%);
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-container p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contact-container a {
+  text-decoration: none;
+  color: #160674;
+  font-weight: bold;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: black;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .home img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .card,
+  .project,
+  form {
+    width: 90%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul li {
+    margin-left: 10px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+  }
+}        
