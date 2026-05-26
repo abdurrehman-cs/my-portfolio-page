@@ -13,7 +13,7 @@ body {
 
 /* Navbar */
 header {
-  background: #222;
+  background: #030303;
   color: white;
   padding: 15px 50px;
 }
@@ -60,15 +60,16 @@ nav ul li a {
 
 .home-text {
   max-width: 600px;
+  color: #2C3E50;
 }
 
 .home span {
-  color: #0077ff;
+  color: #2563EB;
 }
 
 button {
   padding: 10px 20px;
-  background: #0077ff;
+  background: #3B82F6;
   border-radius: 10px;
   border: none;
   color: white;
@@ -79,8 +80,9 @@ button {
 /* About */
 .about {
   background-color: #FFFFFF;
-  color: #16213E;
+  color: #2C3E50;
 }
+
 /* Sections */
 section {
   padding: 60px 20px;
@@ -90,9 +92,10 @@ section {
 
 /* Education */
 #education {
-  background-color: #F7F9FC;
-  color: #16213E;
+  background-color: #F4F8FC;
+  color: #2C3E50;
 }
+
 .edu-container {
   display: flex;
   justify-content: center;
@@ -118,25 +121,26 @@ section {
 
 /* Different colors for each */
 .matric {
-  background: #e3f2fd;   /* blue */
-  border-left: 5px solid #2196f3;
+  background: #DDEEFF;
+  border-left: 5px solid #5B9BFF;
 }
 
 .inter {
-  background: #fff8e1;   /* yellow */
-  border-left: 5px solid #ffc107;
+  background: #FFF3D6;
+  border-left: 5px solid #F4B400;
 }
 
 .bscs {
-  background: #e8f5e9;   /* green */
-  border-left: 5px solid #4caf50;
+  background: #DDF7E3;
+  border-left: 5px solid #34A853;
 }
 
 /* Skills */
 #skills {
-  background-color: lightcyan;
-  color: black;
+  background-color: #E8F8F8;
+  color: #2C3E50;
 }
+
 .skills-container {
   display: flex;
   justify-content: center;
@@ -145,7 +149,7 @@ section {
 }
 
 .skill {
-  background: #0077ff;
+  background: #5B9BFF;
   color: white;
   padding: 10px 20px;
   border-radius: 10px;
@@ -154,9 +158,10 @@ section {
 
 /* Projects */
 #projects {
-  background-color: #FFFFFF;
-  color: #16213E;
+  background-color: #F4F8FC;
+  color: #2C3E50;
 }
+
 .projects-container {
   display: flex;
   justify-content: center;
@@ -166,13 +171,40 @@ section {
 
 .project {
   width: 250px;
-  background: #f4f4f4;
+  background: #FFFFFF;
   padding: 15px;
   border-radius: 10px;
-  margin: 50px ;
+  margin: 50px;
 }
 
 .project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Certificates */
+
+#certificates {
+  background-color: #E6F4EA;
+  color: #2C3E50;
+}
+
+.certificates-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.certificates {
+  width: 280px;
+  background: #FFFFFF;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.certificates img {
   width: 100%;
   border-radius: 10px;
 }
@@ -181,12 +213,12 @@ section {
 #contact {
   text-align: center;
   padding: 40px;
-  background-color: #0F3460;
+  background-color: #4A6FA5;
   color: #FFFFFF;
 }
 
 .contact-container {
-  background: hwb(196 31% 57%);
+  background: #DCEBFF;
   display: inline-block;
   padding: 20px 30px;
   border-radius: 10px;
@@ -196,11 +228,12 @@ section {
 .contact-container p {
   font-size: 18px;
   margin: 10px 0;
+  color: #2C3E50;
 }
 
 .contact-container a {
   text-decoration: none;
-  color: #160674;
+  color: #1E3A8A;
   font-weight: bold;
 }
 
@@ -259,4 +292,4 @@ footer {
   .skills-container {
     flex-direction: column;
   }
-}        
+}
